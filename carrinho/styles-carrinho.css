@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --branco: #fff;
+  --azulmarinho: #1b2c58;
+  --azulpiscina: #478f98;
+  --amarelo: #fb8f01;
+  --rosacoral: #fd4e5b;
+  --laranja: #ff4d2f;
+  --cinzaescuro: #474a51;
+  --cor_fundo: #fffcf7;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fffcf7;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #1b2c58;
+}
+
+/* Navbar */
+#navbar {
+  width: 100%;
+  background: #e8ebea;
+  color: var(--azulmarinho);
+  height: 14%;
+  position: fixed;
+}
+
+#navbar-container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 9.5rem;
+  min-width: 2rem;
+}
+
+.user {
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  width: 200px;
+}
+
+.user .icon-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  right: 30%;
+  cursor: pointer;
+}
+
+#user-icon {
+  margin-right: 5px;
+}
+
+.user .conta {
+  position: absolute;
+  right: 21%;
+  cursor: pointer;
+}
+
+#search-input {
+  width: 70vh;
+  min-width: 30vh;
+  height: 2px;
+  border: none;
+  border-radius: 50px;
+  border: 1px solid var(--cinzaescuro);
+  outline: none;
+  padding: 14px 30px;
+  font-size: 0.7rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: rgba(27.8, 56.1, 59.6, 0.1);
+}
+
+#search-input:focus {
+  border: 2px solid var(--azulpiscina);
+  background-color: var(--branco);
+}
+
+.input-container {
+  position: relative;
+  left: 130px;
+}
+
+.input-container:hover {
+  border: 1px solit var(--blue);
+}
+
+.input-container label {
+  position: absolute;
+  top: 4px;
+  right: 2.5%;
+  color: grey;
+  cursor: pointer;
+}
+
+.input-container label:hover {
+  color: var(--azulmarinho);
+}
+
+/* Carrinho */
+
+.shopping-cart-title {
+  display: block;
+}
+
+.shopping-cart-title,
+.card-product,
+.total-title,
+.shopping-cart-payment {
+  background-color: var(--cor_fundo);
+  padding: 10px;
+  box-shadow: 0 2px 5px #ffeee7;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.title-select {
+  padding-left: 1%;
+  align-self: center;
+}
+
+.card-title-select {
+  display: flex;
+  padding-top: 30px;
+}
+
+.icon-font-awesome {
+  align-self: center;
+}
+
+.card-product,
+.card-description-icons,
+.card-price,
+.add-sub-quantity,
+.card-icons {
+  display: flex;
+}
+
+.card-description-icons {
+  justify-content: space-between;
+}
+
+.card-product {
+  width: 100%;
+}
+
+.card-image {
+  text-align: left;
+  width: 130px;
+}
+
+.select-image {
+  vertical-align: middle;
+}
+
+.card-description-price {
+  padding-left: 5px;
+  width: 90%;
+}
+
+.card-price {
+  justify-content: space-between;
+}
+
+.card-price-discount-buttons {
+  display: flex;
+  padding-top: 38px;
+  justify-content: space-between;
+}
+
+.card-price-buttons {
+  display: flex;
+  padding-top: 35px;
+  justify-content: space-between;
+}
+
+.card-product-price {
+  font-weight: bold;
+}
+
+.card-product-price-1 {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.desconto {
+  color: #fd4e5b;
+}
+
+.add-sub-quantity,
+.card-icons {
+  width: 50px;
+  justify-content: space-between;
+}
+
+.card-second-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.continue-button {
+  padding: 10px;
+  color: white;
+  background-color: #1b2c58;
+  font-weight: bold;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+  letter-spacing: 1.5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.continue-button:hover {
+  background-color: #478f98;
+}
+
+.payment-methods {
+  max-width: 50%;
+}
+
+/* Mobile */
+@media only screen and (max-width: 1350px) {
+  #navbar {
+    height: 180px;
+    width: 100%;
+  }
+
+  #navbar-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #search-input {
+    width: 20%;
+    margin-right: 255px;
+  }
+
+  .input-container label {
+    position: absolute;
+    left: 43%;
+  }
+
+  .user {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    height: 20px;
+    width: 40%;
+  }
+
+  .logo {
+    transform: scale(0.8);
+  }
+
+  .card-title {
+    padding-top: 185px;
+  }
+
+  .total-title,
+  .shopping-cart-payment,
+  .shopping-cart-title,
+  .card-products {
+    margin-bottom: 5px;
+  }
+
+  .computer-vision {
+    width: 100%;
+  }
+
+  .card-product-price-1,
+  .card-product-price,
+  .desconto,
+  .valor-desconto {
+    font-weight: lighter;
+  }
+
+  .card-second-total,
+  .card-description,
+  .title-select {
+    font-size: 130%;
+  }
+
+  .card-price-discount-buttons,
+  .card-price {
+    justify-content: space-between;
+  }
+
+  .card-price {
+    width: 65%;
+  }
+}
+
+/* Computer */
+@media only screen and (min-width: 1351px) {
+  .computer-vision {
+    display: flex;
+    padding-top: 140px;
+    padding-left: 5px;
+  }
+
+  .left-side {
+    width: 60%;
+  }
+
+  .right-side {
+    width: 40%;
+  }
+
+  .total-title,
+  .shopping-cart-payment {
+    margin-right: 30%;
+    margin-bottom: 5px;
+  }
+
+  .shopping-cart-title,
+  .card-products {
+    margin-left: 30%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .title,
+  .total,
+  .payment-title,
+  .payment-protection,
+  .payment-text {
+    font-size: 25px;
+  }
+
+  .title-select,
+  .card-second-total,
+  .card-description,
+  .payment-text {
+    font-size: 17px;
+  }
+
+  .card-price,
+  .card-price-buttons,
+  .add-sub-quantity,
+  .card-icons {
+    font-size: 12px;
+  }
+
+  .card-price {
+    width: 40%;
+  }
+}
