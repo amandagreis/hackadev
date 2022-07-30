@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: #1B2C58;
+}
+
+.Acontainer {
+    display: flex;
+    margin-top: 150px;
+    height: 500px;
+    
+}
+
+#navbar {
+    display: flex;
+    background-color: #eceef5;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#navbar .navbar-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar .navbar-container .logo {
+    height: 80px;
+    width: auto;
+}
+
+#navbar .navbar-container ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar .navbar-container ul i {
+    padding: 0 20px;
+}
+
+#navbar .navbar-container ul i:nth-child(1) {
+    border-right: 1px solid black;
+    }
+
+.descrital {
+   padding-top: 125px;
+
+}
+
+#showcase {
+    max-width: 100%;
+    cursor:zoom-in;
+    float: left;
+    margin: 0;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25px;
+}
+.showcase:hover img {
+    -moz-transform: scale(2.0);
+    -webkit-transform: scale(2.0);
+    transform: scale(2.0);
+
+}
+
+.showcase-container {
+   
+    padding-top: 0;
+    margin: 0;
+    display: inline block;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+   
+}
+.showcase:hover {
+    -moz-transform: scale(2.0);
+    -webkit-transform: scale(2.0);
+    transform: scale(2.0);
+
+}
+.showcase-container h2 {
+    padding-bottom: 25px;
+   
+}
+ 
+.showcase-container p:nth-child(1) {
+    font-size: 35px;
+}
+.showcase-container p:nth-child(2) {
+    padding-bottom: 10px;
+}
+
+.showcase-container p:nth-child(3) {
+    color: rgb(107, 107, 107);
+    padding-bottom: 10px;
+  
+}
+.showcase-container p:nth-child(4) {
+    color: rgb(109, 109, 109);   
+}
+.adicionar-sacola{
+    padding-top: 35px;
+}
+
+.btn-primary:hover {
+    background: #478F98;
+    cursor: pointer;
+}
+.btn-primary {
+  
+   display: flex;
+   background: #1B2C58;
+   color: white;
+   padding: 10px 60px;
+   border: none;
+   border-radius: 10px;
+   text-transform: uppercase;
+  }
+  
+.tamanho:hover {
+   background: rgb(199, 182, 182);
+   cursor: pointer;
+
+}
+ .tamanho {
+   display: inline;
+   background: white;
+   color: black;
+   padding: 10px 10px;
+   margin-right:  5px;
+   border-radius: 5px;
+    }
+  
