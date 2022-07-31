@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --branco: #fff;
+  --azulmarinho: #1b2c58;
+  --azulpiscina: #478f98;
+  --amarelo: #fb8f01;
+  --rosacoral: #fd4e5b;
+  --laranja: #ff4d2f;
+  --cinzaescuro: #474a51;
+  --cor_fundo: #fffcf7;
+  --navbar: #e8ebea;
+}
+
+html {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fffcf7;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  color: #1b2c58;
+}
+
+.fonte {
+  font-size: 11px;
+}
+
+/* Navbar */
+#navbar {
+  width: 100%;
+  background: var(--navbar);
+  color: var(--azulmarinho);
+  height: 14%;
+  position: sticky;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+
+#navbar-container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+width: 9.5rem;
+}
+
+.user {
+justify-content: space-between;
+align-items: center;
+margin: auto;
+display: flex;
+width: 20%;
+position: relative;
+margin-right: 0px;
+cursor: pointer;
+}
+
+.user .conta {
+padding-right: 28%;
+}
+
+.input-container {
+width: 60vh;
+position: relative;
+left: 180px;  
+}
+
+#search-input {
+width: 60vh;
+height: 2px;
+border-radius: 50px;
+border: 1px solid var(--cinzaescuro);
+outline: none;
+padding: 12px 30px;
+font-size: 0.7rem;
+text-align: center;
+background: var(--cinzaclaro);
+}
+
+#search-input:focus {
+border: 2px solid var(--azulpiscina);
+background-color: var(--branco);
+}
+
+.input-container label {
+position: absolute;
+top: 6px;
+right: 4%;
+color: grey;
+cursor:pointer;
+font-size: 15px;
+}
+
+/* Carrinho */
+
+.shopping-cart-title {
+  display: block;
+}
+
+.shopping-cart-title,
+.card-product,
+.total-title,
+.shopping-cart-payment {
+  background-color: var(--cor_fundo);
+  padding: 10px;
+  box-shadow: 0 2px 5px #ffeee7;
+  font-size: 11px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.title-select {
+  padding-left: 1%;
+  align-self: center;
+}
+
+.card-title-select {
+  display: flex;
+  padding-top: 30px;
+}
+
+.icon-font-awesome {
+  align-self: center;
+}
+
+.coracao:hover {
+  color: rgb(228, 61, 61);
+  cursor: pointer;
+}
+
+.lixeira:hover {
+  color: rgb(138, 126, 126);
+  cursor: pointer;
+}
+
+.operacao:hover {
+  color: rgb(216, 205, 205);
+  cursor: pointer;
+}
+
+.card-product,
+.card-description-icons,
+.card-price,
+.add-sub-quantity,
+.card-icons {
+  display: flex;
+}
+
+.card-description-icons {
+  justify-content: space-between;
+}
+
+.card-product {
+  width: 100%;
+}
+
+.card-image {
+  text-align: left;
+  width: 130px;
+}
+
+.select-image {
+  vertical-align: middle;
+}
+
+.card-description-price {
+  padding-left: 5px;
+  width: 90%;
+}
+
+.card-price {
+  justify-content: space-between;
+}
+
+.card-price-discount-buttons {
+  display: flex;
+  padding-top: 38px;
+  justify-content: space-between;
+}
+
+.card-price-buttons {
+  display: flex;
+  padding-top: 35px;
+  justify-content: space-between;
+}
+
+.card-product-price {
+  font-weight: bold;
+}
+
+.card-product-price-1 {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.desconto {
+  color: #fd4e5b;
+}
+
+.add-sub-quantity,
+.card-icons {
+  width: 50px;
+  justify-content: space-between;
+}
+
+.card-second-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.continue-button {
+  padding: 10px;
+  color: white;
+  background-color: #1b2c58;
+  font-weight: bold;
+  width: 40%;
+  margin-left: 30%;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+  letter-spacing: 1.5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.continue-button:hover {
+  background-color: #478f98;
+}
+
+.payment-methods {
+  max-width: 50%;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 280px) {
+  #search-input {
+    font-size: 8px;
+  }
+
+  #navbar-container .icon-user {
+    padding-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 754px) {
+  #navbar {
+    height: 140px;
+    width: 100%;
+  }
+
+  #navbar-container {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .logo {
+    width: 120px;
+    margin-left: 0%;
+  }
+
+  .input-container {
+    width: 80%;      
+    position: relative;
+    left: 0px;
+  }
+
+  #search-input {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .input-container label {
+    position: absolute;
+    right: 5%;
+    top: 0%;
+  }
+
+  .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.6rem;
+    height: 25px;
+    width: 50%;
+    margin-right: 25%;
+    margin-top: 5px;
+  }
+
+  #navbar-container .conta {
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  #navbar-container .conta {
+    padding-right: 25%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+ .user .conta {
+    padding-right: 405px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+ .user .conta {
+    padding-right: 405px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  #navbar {
+    height: 140px;
+    width: 100%;
+  }
+
+  #navbar-container {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .logo {
+    width: 120px;
+    margin-left: 0%;
+  }
+
+  .input-container {
+    width: 80%;      
+    position: relative;
+    left: 0px;
+  }
+
+  #search-input {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .input-container label {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+  }
+
+  .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.6rem;
+    height: 25px;
+    width: 50%;
+    margin-right: 25%;
+    margin-top: 5px;
+  }
+
+  .card-title {
+    padding-top: 4%;
+  }
+
+  .total-title,
+  .shopping-cart-payment,
+  .shopping-cart-title,
+  .card-products {
+    margin-bottom: 5px;
+  }
+
+  .computer-vision {
+    width: 100%;
+  }
+
+  .card-product-price-1,
+  .card-product-price,
+  .desconto,
+  .valor-desconto {
+    font-weight: lighter;
+  }
+
+  .card-second-total,
+  .card-description,
+  .title-select {
+    font-size: 130%;
+  }
+
+  .card-price-discount-buttons,
+  .card-price {
+    justify-content: space-between;
+  }
+
+  .card-price {
+    width: 65%;
+  }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ocean Moda Praia</title>
+    <link rel="shortcut icon" href="../imagens/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style--carrinho.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <nav id="navbar-container">
+        <div>
+          <a href="../home/index--home.html"><img src="../imagens/Ocean_logo.png" class="logo" alt=""></a>
+        </div>        
+        <div class="input-container">
+          <label for="search-input"><i class="fa-solid fa-magnifying-glass"></i></label>
+          <input type="text" id="search-input" autofocus=on placeholder="O QUE DESEJA PROCURAR"/>
+        </div>
+        <div class="user">
+          <div class="icon-user">
+            <i class="fa-solid fa-user-large"></i>
+          </div>
+          <div class="conta">
+            <p><a href="../login/index--login.html">Minha Conta</a></p>
+            <p><a href="../cadastro/index--cadastro.html">Cadastro</a></p>
+          </div>
+          <div class="icon-cart">
+            <a href="../carrinho/index--carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </nav>
+    </nav>
+
+          <!-- Título carrinho -->
+  <div class="fonte">
+          <div class="card-title">
+            <div class="shopping-cart-title">
+              <h2 class="title">CARRINHO DE COMPRAS (3)</h2>
+              <div class="card-title-select">
+                <input type="checkbox" name="select-itens" />
+                <p class="title-select">Selecionar todos os itens</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Selecionar produtos -->
+          <div class="card-products">
+            <div class="card-product">
+              <div class="card-image">
+                <input type="checkbox" class="select-itens" />
+                <a href="../cards/index--card.html"><img
+                  src="../imagens/Animal Print -mini.jpg"
+                  class="select-image"
+                /></a>
+              </div>
+              <div class="card-description-price">
+                <div class="card-description-icons">
+                  <a href="../cards/index--card.html"><h3 class="card-description">Animal print</h3></a>
+                  <div class="card-icons">
+                    <i class="fa-solid fa-heart-circle-plus icon-font-awesome coracao"></i>
+                    <i class="fa-solid fa-trash icon-font-awesome lixeira"></i>
+                  </div>
+                </div>
+                <div class="card-price-discount-buttons">
+                  <div class="card-price">
+                    <h3 class="valor-desconto">R$ 71,92</h3>
+                    <h3 class="card-product-price-1">R$ 89,90</h3>
+                    <h3 class="desconto">-20%</h3>
+                  </div>
+                  <div class="add-sub-quantity">
+                    <i class="fa-solid fa-circle-minus icon-font-awesome operacao"></i>
+                    <h3 class="quantity-number">1</h3>
+                    <i class="fa-solid fa-circle-plus icon-font-awesome operacao"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-product">
+              <div class="card-image">
+                <input type="checkbox" class="select-itens" />
+                <a href="../cards/index--card.html"><img
+                  src="../imagens/Lisa-mini.jpg"
+                  class="select-image"
+                /></a>
+              </div>
+              <div class="card-description-price">
+                <div class="card-description-icons">
+                  <h3 class="card-description">Lisa</h3>
+                  <div class="card-icons">
+                    <i class="fa-solid fa-heart-circle-plus icon-font-awesome coracao"></i>
+                    <i class="fa-solid fa-trash icon-font-awesome lixeira"></i>
+                  </div>
+                </div>
+                <div class="card-price-buttons">
+                  <h3 class="card-product-price">R$ 85,00</h3>
+                  <div class="add-sub-quantity">
+                    <i class="fa-solid fa-circle-minus icon-font-awesome operacao"></i>
+                    <h3 class="quantity-number">1</h3>
+                    <i class="fa-solid fa-circle-plus icon-font-awesome operacao"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-product">
+              <div class="card-image">
+                <input type="checkbox" class="select-itens" />
+                <img
+                  src="../imagens/Tiras-mini.jpg"
+                  class="select-image"
+                />
+              </div>
+              <div class="card-description-price">
+                <div class="card-description-icons">
+                  <h3 class="card-description">Tiras</h3>
+                  <div class="card-icons">
+                    <i class="fa-solid fa-heart-circle-plus icon-font-awesome coracao"></i>
+                    <i class="fa-solid fa-trash icon-font-awesome lixeira"></i>
+                  </div>
+                </div>
+                <div class="card-price-buttons">
+                  <h3 class="card-product-price">R$ 100,00</h3>
+                  <div class="add-sub-quantity">
+                    <i class="fa-solid fa-circle-minus icon-font-awesome operacao"></i>
+                    <h3 class="quantity-number">1</h3>
+                    <i class="fa-solid fa-circle-plus icon-font-awesome operacao"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <!-- Total -->
+          <div class="card-total">
+            <div class="total-title">
+              <h2 class="total">Total</h2>
+              <div class="card-second-total">
+                <p class="second-total">Total:</p>
+                <p class="price">R$ 256,92</p>
+              </div>
+              <a href="../checkout/index--checkout.html"><button class="continue-button">CONTINUAR (0)</button></a>
+            </div>
+          </div>
+
+          <!-- Pagamento -->
+          <div class="card-payment">
+            <div class="shopping-cart-payment">
+              <h2 class="payment-title">Métodos de pagamento</h2>
+              <img
+                src="../imagens/Carrinho-pagamentos.jpg"
+                class="payment-methods"
+              />
+              <h2 class="payment-protection">Proteção ao consumidor</h2>
+              <p class="payment-text">
+                Recupere o seu reembolso se o artigo não for entregue ou não
+                estiver de acordo com a descrição
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/7012dc1d33.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
