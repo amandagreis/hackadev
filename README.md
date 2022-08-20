@@ -18,7 +18,7 @@ Equipe: <br /><br />
           Yasmin Meirelles Sanchez Da Silva <br />        
           
           
-Segue imagens com base em noso projeto:
+Segue imagens com base em nosso projeto:
 
 ![image](https://user-images.githubusercontent.com/104847461/182048245-ebd2e73f-a6b0-414a-95c3-406541e2331e.png)
 ![image](https://user-images.githubusercontent.com/104847461/182048264-61e66c3b-dc02-419b-8763-c0f728b5ae24.png)
