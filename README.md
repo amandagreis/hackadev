@@ -4,12 +4,7 @@
 
 Desafio em equipe aplicado pela instituição <b>Imã Learining</b>!
 
-O projeto irá evoluir conforme o andamento do curso e pode ser acompanhado no seguinte link: <br />
-
-
 Etapa 1 - Construção do ambiente usando apenas <b>HTML</b> e <b>CSS</b> (concluída) <br />
-Etapa 2 - Aplicação Javascript <br />
-Etapa 3 - Aplicação frameworks <br />
 
 <br />
 Equipe: <br /><br />
